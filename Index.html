@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use DevPlay Tools for fast image compression, word counting, and code minifying — all in one place!">
+    <meta name="keywords" content="image compressor, word counter, code minifier, devplay tools">
+    <meta name="author" content="DevPlay">
+    <title>DevPlay Tools – Image Compressor, Word Counter, Code Minifier</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Exo:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Exo', 'Orbitron', sans-serif;
+            background: linear-gradient(-45deg, #ff512f, #f09819, #ff512f, #f09819);
+            background-size: 400% 400%;
+            animation: gradientFlow 10s ease infinite;
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 8px rgba(255,255,255,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        @keyframes pulse {
+            0%, 100% { text-shadow: 0 0 8px rgba(255,255,255,0.3); }
+            50% { text-shadow: 0 0 20px rgba(255,255,255,0.6); }
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tool {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+            transform: rotate(45deg);
+            animation: shine 6s linear infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        .tool:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .tool h2 {
+            font-size: 1.7rem;
+            margin-bottom: 14px;
+            color: #fff;
+        }
+
+        .tool p {
+            font-size: 1.1rem;
+            color: #eee;
+        }
+
+        .ads-box {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 0.95rem;
+            color: #ccc;
+            border-radius: 20px;
+        }
+
+        footer a {
+            color: #fdd835;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .tool {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🚀 DevPlay Tools</h1>
+        <p>Powerful, sleek tools to supercharge your productivity.</p>
+    </header>
+
+    <div class="ads-box">
+        <!-- Replace this with your actual AdSense code -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <div class="tool-grid">
+        <div class="tool">
+            <h2>🖼️ Image Compressor</h2>
+            <p>Quickly reduce image size without losing quality.</p>
+        </div>
+        <div class="tool">
+            <h2>✍️ Word Counter</h2>
+            <p>Count words, characters, and more with ease.</p>
+        </div>
+        <div class="tool">
+            <h2>🧠 Code Minifier</h2>
+            <p>Minify your HTML, CSS, or JavaScript for faster websites.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 DevPlay. All rights reserved. |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Contact</a> |
+        <a href="#">Terms of Service</a>
+    </footer>
+</body>
+
+</html>
